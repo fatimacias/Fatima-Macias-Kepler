@@ -8,39 +8,28 @@
     <meta name="keywords" content="HTML, CTD">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        i {
-            margin-right: 8px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <h1>Fatima Macias</h1>
+    <h1 class="my-name">Fatima Macias</h1>
 
-    <section id="About">
+    <section class="about" id="About">
         <h2>About</h2>
-        <p>I’m a full-stack developer with experience working in Scrum Agile teams. I’m passionate about technology and
-            continuous learning. I’m currently preparing for the Azure Developer Associate certification and improving
-            my Python and algorithm skills through LeetCode. I also enjoy learning English.</p>
+        <section class="about-container">
+            <section class="photo">
+                <img src="img/me.jpg" alt="A photo of me smiling" />
+            </section>
+            <section class="about-text">
+                <p>I’m a full-stack developer with experience working in Scrum Agile teams. I’m passionate about technology and
+                    continuous learning. I’m currently preparing for the Azure Developer Associate certification and improving
+                    my Python and algorithm skills through LeetCode. I also enjoy learning English.</p>
+            </section>
+        </section>
     </section>
 
-    <section id="Experience">
+    <section id="experience">
         <h2>Experience</h2>
         <ul>
             <li>Full-Stack Developer at Oncedev – Participated in Agile Scrum projects, contributing to both frontend
@@ -51,7 +40,7 @@
         </ul>
     </section>
 
-    <section id="Connect">
+    <section id="connect">
         <h2>Connect</h2>
         <ul>
             <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/fatima-macias"
