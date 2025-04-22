@@ -1,0 +1,80 @@
+body {
+    background-color: #dfdade;
+    color: #7c7777;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.my-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    text-align: center;
+    color: #0077b6;
+    margin: 20px 0;
+  }
+
+  .about-container {
+    display: flex; /* Usamos Flexbox para la alineación */
+    justify-content: space-between; /* Separa la imagen y el texto */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px;
+  }
+
+section {
+    padding: 20px;
+    margin: 10px;
+    border: 2px dashed #ccc; 
+  }
+
+  .about {
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    border: 0;
+  }
+
+ #experience ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+#experience li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: #023e8a;
+    font-weight: 700;
+  }
+
+  #connect a {
+    display: inline-block;
+    background-color: #90e0ef;
+    color: #03045e;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  #connect a:hover {
+    background-color: #0077b6;
+    color: white;
+  }
+  .photo img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 0; 
+
+  }
+  .about-text {
+    flex: 1; /* Esto hace que el texto ocupe el resto del espacio */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border: 0; 
+  }
