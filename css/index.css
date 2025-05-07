@@ -185,3 +185,26 @@ nav a:hover {
     text-align: center;
   }
 }
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+#skills li {
+  background-color: #ade8f4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #03045e;
+}
+
+@media (min-width: 768px) {
+  #skills li {
+    font-size: 1.1rem;
+  }
+}
