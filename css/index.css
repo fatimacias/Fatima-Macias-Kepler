@@ -124,6 +124,109 @@ nav a:hover {
     list-style: none;
 }
 
+#leave-message {
+  padding: 20px;
+  background-color: #f1f1f1;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+#leave-message form {
+  display: flex;
+  flex-direction: column;
+}
+
+#leave-message label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#leave-message input,
+#leave-message textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+#leave-message button {
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#leave-message button:hover {
+  background-color: #023e8a;
+}
+
+#messages {
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#messages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#messages li {
+  background-color: #e0fbfc;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.message-buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 1.2rem;
+  color: #0077b6;
+  transition: color 0.3s ease;
+}
+
+.message-buttons button:hover {
+  color: #023e8a;
+}
+
+.message-buttons button i {
+  pointer-events: none;
+}
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+#skills li {
+  background-color: #ade8f4;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #03045e;
+}
 
 /* ====== Tablet Styles (min-width: 768px) ====== */
 @media (min-width: 768px) {
@@ -184,23 +287,25 @@ nav a:hover {
     width: 80%;
     text-align: center;
   }
-}
 
-#skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 0;
-  list-style: none;
-  justify-content: center;
-}
+  #leave-message,
+  #messages {
+    width: 90%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+  }
 
-#skills li {
-  background-color: #ade8f4;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  color: #03045e;
+  #leave-message input,
+  #leave-message textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  #leave-message button {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
 }
 
 @media (min-width: 768px) {
