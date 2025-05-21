@@ -98,3 +98,31 @@ newMessage.appendChild(buttonContainer);
 
   messageForm.reset();
 });
+
+fetch("https://api.github.com/users/fatimacias/repos")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json();
+  })
+  .then(repositories => {
+    console.log(repositories);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(error => {
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+    const errorItem = document.createElement("li");
+    errorItem.innerText = "Error loading repositories: " + error.message;
+    errorItem.style.color = "red";
+    projectList.appendChild(errorItem);
+  });
