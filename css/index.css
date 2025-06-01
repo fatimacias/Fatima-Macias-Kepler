@@ -313,3 +313,27 @@ nav a:hover {
     font-size: 1.1rem;
   }
 }
+
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+#projects li {
+  background-color: #dbe9f4;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #023e8a;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+#projects li:hover {
+  transform: scale(1.05);
+  background-color: #ade8f4;
+}
